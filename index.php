@@ -14,14 +14,22 @@ class Movie
         $this->poster = $poster;
         $this->genre = $genre;
     }
+
+    public function displayInfo()
+    {
+        echo 'Title: ' . $this->title . '<br>';
+        echo 'Duration: ' . $this->duration . ' minutes<br>';
+        echo 'Poster: ' . $this->poster . '<br>';
+        echo 'Genre: ' . $this->genre . '<br>';
+    }
 }
 
 $Robocop = new Movie('Robocop', '120', 'https://picsum.photos/id/684/600/400', 'Action');
 $Terminator = new Movie('Terminator', '140', 'https://picsum.photos/id/684/600/400', 'Action');
 $Fantozzi = new Movie('Fantozzi', '80', 'https://picsum.photos/id/684/600/400', 'Comedy');
-$IlPadrino = new Movie('Robocop', '110', 'https://picsum.photos/id/684/600/400', 'Gangster');
+$IlPadrino = new Movie('Il Padrino', '110', 'https://picsum.photos/id/684/600/400', 'Gangster');
 
-var_dump($Robocop, $IlPadrino, $Fantozzi, $IlPadrino);
+// var_dump($Robocop, $IlPadrino, $Fantozzi, $IlPadrino);
 
 
 
@@ -39,6 +47,12 @@ var_dump($Robocop, $IlPadrino, $Fantozzi, $IlPadrino);
 </head>
 
 <body>
+    <div class="container">
+        <?php
+        $Robocop->displayInfo();
+        $Terminator->displayInfo();
+        ?>
+    </div>
 </body>
 
 </html>
