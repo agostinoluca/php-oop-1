@@ -6,6 +6,14 @@ class Movie
     public $duration;
     public $poster;
     public $genre;
+
+    public function __construct($title, $duration, $poster, $genre)
+    {
+        $this->title = $title;
+        $this->duration = $duration;
+        $this->poster = $poster;
+        $this->genre = $genre;
+    }
 }
 
 $Robocop = new Movie();
@@ -13,7 +21,7 @@ $Terminator = new Movie();
 $Fantozzi = new Movie();
 $IlPadrino = new Movie();
 
-var_dump($Robocop, $Terminator);
+// var_dump($Robocop, $IlPadrino);
 
 
 
