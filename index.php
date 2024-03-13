@@ -16,12 +16,12 @@ class Movie
     }
 }
 
-$Robocop = new Movie();
-$Terminator = new Movie();
-$Fantozzi = new Movie();
-$IlPadrino = new Movie();
+$Robocop = new Movie('Robocop', '120', 'https://picsum.photos/id/684/600/400', 'Action');
+$Terminator = new Movie('Terminator', '140', 'https://picsum.photos/id/684/600/400', 'Action');
+$Fantozzi = new Movie('Fantozzi', '80', 'https://picsum.photos/id/684/600/400', 'Comedy');
+$IlPadrino = new Movie('Robocop', '110', 'https://picsum.photos/id/684/600/400', 'Gangster');
 
-// var_dump($Robocop, $IlPadrino);
+var_dump($Robocop, $IlPadrino, $Fantozzi, $IlPadrino);
 
 
 
@@ -39,7 +39,6 @@ $IlPadrino = new Movie();
 </head>
 
 <body>
-
 </body>
 
 </html>
