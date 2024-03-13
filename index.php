@@ -1,6 +1,21 @@
 <?php
 
-var_dump('Hello World');
+class Movie
+{
+    public $title;
+    public $duration;
+    public $poster;
+    public $genre;
+}
+
+$Robocop = new Movie();
+$Terminator = new Movie();
+$Fantozzi = new Movie();
+$IlPadrino = new Movie();
+
+var_dump($Robocop, $Terminator);
+
+
 
 ?>
 
