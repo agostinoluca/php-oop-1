@@ -1,35 +1,6 @@
 <?php
 
-class Movie
-{
-    // public $title;
-    // public $duration;
-    // public $poster;
-    // public $genre;
-
-    /**
-     * @param String $title The title of movie
-     * @param Number $duration The duration of movie
-     * @param String $poster The poster of movie
-     * @param String $genre The genre of movie
-     */
-    public function __construct(public string $title, public int $duration, public string $poster, public string $genre)
-    {
-        $this->title = $title;
-        $this->duration = $duration;
-        $this->poster = $poster;
-        $this->genre = $genre;
-    }
-
-    public function displayInfo()
-    {
-        echo 'Title: ' . $this->title . '<br>';
-        echo 'Duration: ' . $this->duration . ' minutes<br>';
-        echo 'Poster: <img width="200" src="' . $this->poster . '" alt=""><br>';
-        echo 'Genre: ' . $this->genre . '<br>';
-    }
-}
-
+require_once __DIR__ . '/app/Models/Movie.php';
 
 $movies = [
     new Movie('Robocop', 120, 'https://picsum.photos/id/684/600/400', 'Action'),
@@ -40,17 +11,7 @@ $movies = [
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<img src="" alt="">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP OOP</title>
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-</head>
+<?php require_once __DIR__ . '/app/Layout/head.php'; ?>
 
 <body class="bg-secondary">
     <div class="container">
