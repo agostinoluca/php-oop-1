@@ -25,7 +25,7 @@ class Movie
     {
         echo 'Title: ' . $this->title . '<br>';
         echo 'Duration: ' . $this->duration . ' minutes<br>';
-        echo 'Poster: ' . $this->poster . '<br>';
+        echo 'Poster: <img width="200" src="' . $this->poster . '" alt=""><br>';
         echo 'Genre: ' . $this->genre . '<br>';
     }
 }
@@ -42,6 +42,7 @@ $movies = [
 
 <!DOCTYPE html>
 <html lang="en">
+<img src="" alt="">
 
 <head>
     <meta charset="UTF-8">
