@@ -25,7 +25,7 @@ class Movie
     {
         echo 'Title: ' . $this->title . '<br>';
         echo 'Duration: ' . $this->duration . ' minutes<br>';
-        echo 'Poster: <img width="200" src="' . $this->poster . '" alt=""><br>';
         echo 'Genre: ' . $this->genre . '<br>';
+        echo '<img width="200" src="' . $this->poster . '" alt="poster movie"><br>';
     }
 }

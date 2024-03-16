@@ -1,0 +1,17 @@
+:root {
+    --movie-blue: rgba(102, 72, 72, 0.801);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.25rem;
+}
+
+.bg_primary {
+    background-color: var(--movie-blue);
+}
+
+.row .bg_primary_shadow {
+    background-color: var(--movie-blue);
+    box-shadow: 0 0 0.5rem black;
+}
