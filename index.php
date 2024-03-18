@@ -11,7 +11,7 @@ require_once __DIR__ . '/app/Layout/head.php';
             </div>
             <?php foreach ($movies as $movie) : ?>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-3">
-                    <div class="card text-center bg_primary_shadow" style="min-height: 25rem;">
+                    <div class="card text-center bg_primary_shadow" style="min-height: 30rem;">
                         <div class="card-title text-light pt-3 ">
                             <h3><?= $movie->title ?></h3>
                             <h6><?= 'Duration: ' . $movie->duration . ' minutes' ?></h6>
@@ -26,10 +26,13 @@ require_once __DIR__ . '/app/Layout/head.php';
                             <?php foreach ($movie->genres as $genre) : ?>
                                 <?= $genre->name . ' (' . $genre->itaTraduction . ')<br>' ?>
                             <?php endforeach; ?>
-                            <p class="text-secondary"><?= Movie::$isStatic ?></p>
-                            <p class="text-secondary"><?= $movie->returnStatic() ?></p>
                         </div>
                         <!-- /.card-footer -->
+                        <div class="text-secondary d-flex flex-column ">
+                            <span style="font-size: xx-small;"><?= Movie::$isStatic ?></span>
+                            <span style="font-size: xx-small;"><?= $movie->returnStatic() ?></span>
+                            <span style="font-size: xx-small;"><?= Movie::sayStaticInfo() ?></span>
+                        </div>
                     </div>
                     <!-- /.card -->
                 </div>

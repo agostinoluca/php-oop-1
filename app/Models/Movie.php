@@ -1,12 +1,17 @@
 <?php
 class Movie
 {
-    public static $isStatic = "Static info of Movies.";
-    public static $returnStaticInfo = "Method with static info return";
+    public static $isStatic = "1) Static info of Movies.";
+    public static $returnStaticInfo = "2) Method with static info return";
 
     public function returnStatic()
     {
         return self::$returnStaticInfo;
+    }
+
+    public static function sayStaticInfo()
+    {
+        return "3) This is a static function info.";
     }
 
     /**
