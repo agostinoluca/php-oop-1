@@ -2,6 +2,12 @@
 class Movie
 {
     public static $isStatic = "Static info of Movies.";
+    public static $returnStaticInfo = "Method with static info return";
+
+    public function returnStatic()
+    {
+        return self::$returnStaticInfo;
+    }
 
     /**
      * @param string $title The title of movie
