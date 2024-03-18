@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<img src="" alt="">
 
 <head>
     <meta charset="UTF-8">

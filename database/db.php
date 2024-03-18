@@ -10,6 +10,8 @@ $movies = [
         [
             new Genre('Action', 'Azione'),
             new Genre('Sci-Fi', 'Fantascienza'),
+            new Genre('Crime', 'Crimine'),
+            new Genre('Drama', 'Drammatico'),
         ]
     ),
     $terminator = new Movie(
@@ -19,6 +21,7 @@ $movies = [
         [
             new Genre('Action', 'Azione'),
             new Genre('Sci-Fi', 'Fantascienza'),
+            new Genre('Drama', 'Drammatico'),
         ]
     ),
 
@@ -28,7 +31,6 @@ $movies = [
         'https://picsum.photos/id/695/600/400',
         [
             new Genre('Comedy', 'Commedia'),
-            new Genre('Drama', 'Drammatico'),
         ]
     ),
 
@@ -119,6 +121,7 @@ $movies = [
         [
             new Genre('Biography', 'Biografia'),
             new Genre('Drama', 'Drammatico'),
+            new Genre('Historical', 'Storico'),
         ]
     ),
 
@@ -139,6 +142,7 @@ $movies = [
         [
             new Genre('Drama', 'Drammatico'),
             new Genre('Thriller', 'Thriller'),
+            new Genre('Action', 'Azione'),
         ]
     ),
 ];
