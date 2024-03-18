@@ -1,6 +1,8 @@
 <?php
 class Movie
 {
+    public static $isStatic = "Static info of Movies.";
+
     /**
      * @param string $title The title of movie
      * @param int $duration The duration of movie

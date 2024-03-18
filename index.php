@@ -26,6 +26,7 @@ require_once __DIR__ . '/app/Layout/head.php';
                             <?php foreach ($movie->genres as $genre) : ?>
                                 <?= $genre->name . ' (' . $genre->itaTraduction . ')<br>' ?>
                             <?php endforeach; ?>
+                            <p class="text-secondary"><?= Movie::$isStatic ?></p>
                         </div>
                         <!-- /.card-footer -->
                     </div>
